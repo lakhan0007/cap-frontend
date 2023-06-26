@@ -1,11 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header.js';
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
-  <div className="bg-red-500">
-  React App
-  </div>
+      <div>
+        <Header/>
+        <main className="pt-16">
+          <Outlet/>
+        </main>
+      </div>
   );
 }
 
